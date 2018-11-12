@@ -26,7 +26,6 @@ var myObj={
         document.getElementById('currentWord').innerHTML=this.output;
     },
     myFunc:function(b){
-        console.log(b);
         if(!parseInt(b.key)&&this.guessesRemaining>0){
             for(var t=0;t<this.lettersGuessed.length;t++){
                 if(b.key.toLowerCase()==this.lettersGuessed[t].toLowerCase()||b.key.toLowerCase()=='enter'){
