@@ -29,13 +29,13 @@ var myObj={
         console.log(b);
         if(!parseInt(b.key)&&this.guessesRemaining>0){
             for(var t=0;t<this.lettersGuessed.length;t++){
-                if(b.key.toLowerCase()==this.lettersGuessed[t]||b.key.toLowerCase()=='enter'){
+                if(b.key.toLowerCase()==this.lettersGuessed[t].toLowerCase()||b.key.toLowerCase()=='enter'){
                     return;
                 }
             }
             this.output='';
             this.guessesRemaining-=1;
-            this.lettersGuessed.push(b.key.toLowerCase());
+            this.lettersGuessed.push(b.key.toUpperCase());
             document.getElementById('guessedLetters').innerHTML=this.lettersGuessed;
             document.getElementById('guesses').innerHTML=this.guessesRemaining;
             for(var k=0;k<this.activeWord.length;k++){
