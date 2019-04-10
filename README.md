@@ -1,5 +1,6 @@
 # Word-Guess-Game
 https://alexgreen92.github.io/Word-Guess-Game
+80s style
 HTML CSS JavaScript jQuery. 
 Word Guess Game, use keyboard to guess letters. If you guessed the right word the video clip will play.  words : genesis , blondie , survivor, gameover
 
